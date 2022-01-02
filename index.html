@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hakan</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+		<base target="_blank">
+    </head>
+    <body>
+		<div id="sidebar">
+			<div id="title-name" class="white-spread title">
+				<h1><span class="inverse-color-title" id="mode-switch">h</span><span>a</span><span>k</span><span>a</span><span>n</span> <br>
+					<span class="inverse-color-title" id="colr-switch">e</span><span>r</span><span>o</span><span>ğ</span><span>l</span><span>u</span></h1>
+			</div>
+			<nav class="white-spread title">
+				<ul>
+					<li onclick="displayContent(contents.ABOUTME,this)"><span class="inverse-color-title">a</span>bout me</li>
+					<li onclick="displayContent(contents.EDUCATION,this)"><span class="inverse-color-title">e</span>ducation</li>
+					<li onclick="displayContent(contents.AWARDS,this)"><span class="inverse-color-title">r</span>ecognitions</li>
+					<li onclick="displayContent(contents.ACTIVITIES,this)"><span class="inverse-color-title">a</span>ctivities</li>
+					<li onclick="displayContent(contents.SKILLS,this)"><span class="inverse-color-title">s</span>kills</li>
+					<li onclick="displayContent(contents.INTERESTS,this)"><span class="inverse-color-title">i</span>nterests</li>
+					<!--
+					<li onclick="displayContent(contents.PROJECTS,this)"><span class="inverse-color-title">p</span>rojects</li>
+					<li onclick="displayContent(contents.GALLERY,this)"><span class="inverse-color-title">g</span>allery</li>
+					-->
+					<li onclick="displayContent(contents.CONTACT,this)"><span class="inverse-color-title">c</span>ontact</li>
+				</ul>
+			</nav>
+		</div>
+		<div id="content-container">
+			<div id="content" class="white-spread"></div>
+		</div>
+        <canvas id ="background"></canvas>
+        <script src="src/js/modes.js"></script>
+        <script src="src/js/noise.js"></script>
+        <script src="src/js/background.js"></script>
+        <script src="src/js/interactivity.js"></script>
+        <script src="src/js/content.js"></script>
+    </body>
+</html>
